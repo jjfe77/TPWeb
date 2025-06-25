@@ -1,0 +1,5 @@
+Aclaraciones:
+
+1- El responsive fue preparado para una pantalla de 600px, pero en un celular con display Full HD+ la página se abría en 375px y no funcionaba bien. Se solucionó pero no quedó de la mejor manera, visualmente hablando.
+
+2- El archivo main.js debe dejar fija la barra de navegación al realizar un scroll. Al ejecutarlo de forma local el efecto funciona, pero al ejecutarlo desde GitHub no. No se por que sucede.
