@@ -1,3 +1,5 @@
+
+console.log("main.js cargado y ejecutándose");
 $(document).ready(function(){
 	var altura = $('.menu-simple').offset().top;
 	
