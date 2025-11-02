@@ -56,26 +56,32 @@
 
 
   <script>
-    // --- Cargar lista de proyectos desde un JSON ---
-    fetch('proyectos/lista.json')
-      .then(res => res.json())
-      .then(data => {
-        const lista = document.getElementById('lista-proyectos');
-        data.forEach(p => {
-          const li = document.createElement('li');
-          li.innerHTML = `
-            <span>${p.archivo} </i></span>
-            <a href="proyectos/${p.archivo}" download>Descargar</a>
-            
-          `;
-          lista.appendChild(li);
-        });
-      })
-      .catch(err => {
-        console.error("Error cargando lista de proyectos:", err);
-        document.getElementById('lista-proyectos').innerHTML =
-          "<li>No se pudieron cargar los proyectos.</li>";
-      });
+
+
+      // --- Cargar lista de proyectos desde un JSON --- 
+fetch(`proyectos/lista.json?nocache=${Date.now()}`)
+  .then(res => res.json())
+  .then(data => {
+    const lista = document.getElementById('lista-proyectos');
+    lista.innerHTML = ''; // Limpia la lista anterior
+    data.forEach(p => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <span>${p.archivo}</span>
+        <a href="proyectos/${p.archivo}" download>Descargar</a>
+      `;
+      lista.appendChild(li);
+    });
+  })
+  .catch(err => {
+    console.error("Error cargando lista de proyectos:", err);
+    document.getElementById('lista-proyectos').innerHTML =
+      "<li>No se pudieron cargar los proyectos.</li>";
+  });
+
+
+
+
   </script>
 
     <footer>
