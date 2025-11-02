@@ -28,7 +28,9 @@ echo ======================================
 echo 🚀 Subiendo cambios a GitHub Pages
 echo ======================================
 
-git add proyectos\lista.json
+echo git add proyectos\lista.json
+
+git add proyectos/
 git commit -m "🔄 Actualización automática de lista.json (%date% %time%)"
 git push origin main
 
