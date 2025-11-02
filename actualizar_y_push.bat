@@ -2,25 +2,23 @@
 cd /d "%~dp0"
 
 echo ======================================
-echo 🔄 Generando lista.json con los archivos ZIP
+echo 🔄 Generando lista.json con formato legible
 echo ======================================
 
 setlocal enabledelayedexpansion
-set "json=[" 
-set first=true
-
-for %%f in (proyectos\*.zip) do (
-    if "!first!"=="true" (
-        set "json=!json!{"nombre": "%%~nxf"}"
-        set first=false
-    ) else (
-        set "json=!json!, {"nombre": "%%~nxf"}"
+(
+    echo [
+    set first=true
+    for %%f in (proyectos\*.zip) do (
+        if "!first!"=="true" (
+            echo   { "archivo": "%%~nxf" }
+            set first=false
+        ) else (
+            echo , { "archivo": "%%~nxf" }
+        )
     )
-)
-
-set "json=!json!]"
-
-> proyectos\lista.json echo !json!
+    echo ]
+) > proyectos\lista.json
 
 echo ✅ Archivo lista.json generado correctamente.
 echo.
