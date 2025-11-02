@@ -11,15 +11,16 @@ set first=true
 
 for %%f in (proyectos\*.zip) do (
     if "!first!"=="true" (
-        set "json=!json!{\"nombre\": \"%%~nxf\"}"
+        set "json=!json!{"nombre": "%%~nxf"}"
         set first=false
     ) else (
-        set "json=!json!, {\"nombre\": \"%%~nxf\"}"
+        set "json=!json!, {"nombre": "%%~nxf"}"
     )
 )
 
 set "json=!json!]"
-echo !json! > proyectos\lista.json
+
+> proyectos\lista.json echo !json!
 
 echo ✅ Archivo lista.json generado correctamente.
 echo.
