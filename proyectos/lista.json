@@ -1,17 +1,17 @@
 [
-  { "nombre": "4to_2da_blink_modificado.zip" }
-, { "nombre": "alarma_ultrasonido.zip" }
-, { "nombre": "BTCarlos - copia (2).zip" }
-, { "nombre": "BTCarlos - copia.zip" }
-, { "nombre": "BTCarlos.zip" }
-, { "nombre": "Carrito_Bluetooth_SerialSoftware.zip" }
-, { "nombre": "luz_automatica.zip" }
-, { "nombre": "prueba-bluetooth - copia (2) - copia.zip" }
-, { "nombre": "prueba-bluetooth - copia (2).zip" }
-, { "nombre": "prueba-bluetooth - copia.zip" }
-, { "nombre": "prueba-bluetooth.zip" }
-, { "nombre": "semaforo - copia (2).zip" }
-, { "nombre": "semaforo - copia - copia.zip" }
-, { "nombre": "semaforo - copia.zip" }
-, { "nombre": "semaforo.zip" }
+  { "archivo": "4to_2da_blink_modificado.zip" }
+, { "archivo": "alarma_ultrasonido.zip" }
+, { "archivo": "BTCarlos - copia (2).zip" }
+, { "archivo": "BTCarlos - copia.zip" }
+, { "archivo": "BTCarlos.zip" }
+, { "archivo": "Carrito_Bluetooth_SerialSoftware.zip" }
+, { "archivo": "luz_automatica.zip" }
+, { "archivo": "prueba-bluetooth - copia (2) - copia.zip" }
+, { "archivo": "prueba-bluetooth - copia (2).zip" }
+, { "archivo": "prueba-bluetooth - copia.zip" }
+, { "archivo": "prueba-bluetooth.zip" }
+, { "archivo": "semaforo - copia (2).zip" }
+, { "archivo": "semaforo - copia - copia.zip" }
+, { "archivo": "semaforo - copia.zip" }
+, { "archivo": "semaforo.zip" }
 ]
