@@ -9,6 +9,7 @@ h2, h3{
     color: #237A57;
 }
 
+
 form{
     width: 450px;
     height: 620px;
@@ -20,6 +21,8 @@ form{
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;    
 }
+
+
 
 .form{
     width: 100%;
@@ -123,6 +126,8 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
+
+
 
 @media all and (max-width: 599px){
     form{

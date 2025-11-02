@@ -1,0 +1,129 @@
+/* ============================================================
+   STYLES_PROYECTOS.CSS - versión corregida
+   Basado en el diseño del index.html
+   ============================================================ */
+
+/* --- Estructura principal --- */
+body {
+  background-color: rgb(194, 194, 194);
+  margin: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- Sección de proyectos disponibles --- */
+section h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(58, 56, 56);
+  border-radius: 25px;
+  padding: 0.8em;
+  margin: 1.5em auto;
+  width: 80%;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
+  animation: BGcolorChanging-4colors 4s linear infinite alternate both;
+}
+
+/* --- Animación de color (igual que el index) --- */
+@keyframes BGcolorChanging-4colors {
+  0% { background: rgba(0,136,144,255); }
+  33% { background: rgb(141,143,145); }
+  66% { background: rgb(141,143,145); }
+  100% { background: rgba(0,136,144,255); }
+}
+
+/* --- Lista de proyectos --- */
+#lista-proyectos {
+  list-style: none;
+  padding: 0;
+  margin: 1em auto 2em;
+  width: 85%;
+  background: linear-gradient(to right, rgb(25, 179, 120), white);
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px rgb(109, 106, 106);
+}
+
+#lista-proyectos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#lista-proyectos li:hover {
+  background-color: rgba(0, 136, 144, 0.15);
+}
+
+#lista-proyectos span {
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  font-style: italic;
+}
+
+#lista-proyectos a {
+  text-decoration: none;
+  background-color: rgb(25, 179, 120);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+#lista-proyectos a:hover {
+  background-color: rgb(0, 100, 90);
+  transform: scale(1.05);
+}
+
+/* --- Bloque para compartir proyectos --- */
+.upload-hint {
+  background: rgb(95, 155, 145);
+  color: black;
+  border-radius: 15px;
+  width: 85%;
+  margin: 2em auto;
+  padding: 1.5em;
+  box-shadow: 3px 3px 8px rgb(109, 106, 106);
+}
+
+.upload-hint h2 {
+  background: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.upload-hint p {
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  #lista-proyectos li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #lista-proyectos a {
+    margin-top: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  section h2 {
+    width: 95%;
+    font-size: 1.1em;
+  }
+
+  .upload-hint {
+    width: 95%;
+    font-size: 0.9em;
+  }
+}

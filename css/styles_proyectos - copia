@@ -1,0 +1,90 @@
+
+    /* --- Estilos mínimos para integrarse con tu sitio --- */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #003366;
+    }
+
+    .upload-hint {
+      background: #eef5ff;
+      padding: 15px;
+      border-left: 4px solid #003366;
+      margin-top: 30px;
+      border-radius: 6px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #e9f0fa;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #003366;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    .upload-hint {
+      background: #eef5ff;
+      padding: 15px;
+      border-left: 4px solid #003366;
+      margin-top: 30px;
+      border-radius: 6px;
+    }
